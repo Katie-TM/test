@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="sidebar">
+    <div class="sidebar-top">
+        <h2>StudyPilot AI</h2>
+        <button id="themeBtn" onclick="toggleTheme()">
+            ☀️
+        </button>
+    </div>
+
+    <ul>
+        <li><a href="index.html">🏠 Dashboard</a></li>
+        <li><a href="planner.html">📅 Planner</a></li>
+        <li><a href="ai-planner.html">🤖 AI Planner</a></li>
+        <li><a href="progress.html">📊 Progress</a></li>
+        <li><a href="timer.html">⏱ Timer</a></li>
+    </ul>
+</div>
+
+<div class="container">
+    <h1>⏱️ Pomodoro Timer</h1>
+    <h2 id="timer">25:00</h2>
+    <button onclick="startTimer()">Start</button>
+    <button onclick="resetTimer()">Reset</button>
+</div>
+
+<script src="js/script.js"></script>
+
+<div class="music-player">
+
+    <h2>🎧 Study Lofi</h2>
+    <p id="songName">No song playing</p>
+    <button onclick="playMusic()">
+        ▶️ Play
+    </button>
+
+    <button onclick="pauseMusic()">
+        ⏸ Pause
+    </button>
+
+    <button onclick="nextSong()">
+        ⏭ Next
+    </button>
+
+    <input type="range" min="0" max="1" step="0.01"
+    oninput="audio.volume=this.value">
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Progress</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+    <div class="sidebar">
+    <div class="sidebar-top">
+        <h2>StudyPilot AI</h2>
+        <button id="themeBtn" onclick="toggleTheme()">
+            ☀️
+        </button>
+    </div>
+
+    <ul>
+        <li><a href="index.html">🏠 Dashboard</a></li>
+        <li><a href="planner.html">📅 Planner</a></li>
+        <li><a href="ai-planner.html">🤖 AI Planner</a></li>
+        <li><a href="progress.html">📊 Progress</a></li>
+        <li><a href="timer.html">⏱ Timer</a></li>
+    </ul>
+</div>
+
+<div class="container">
+<h1>📊 Progress Dashboard</h1>
+
+    <div class="cards">
+
+    <div class="card">
+        <h3>Subjects</h3>
+        <h2 id="subjectCount">0</h2>
+    </div>
+
+    <div class="card">
+        <h3>Total Study Sessions</h3>
+        <h2 id="sessionCount">0</h2>
+    </div>
+
+</div>
+
+<canvas id="studyChart"></canvas>
+
+</div>
+
+<script src="js/script.js"></script>
+
+<h2>🏆 Achievements</h2>
+<div id="badges">
+</div>
+
+<h2>⭐ Level Progress</h2>
+<div class="progress">
+<div class="progress-bar" id="levelBar">
+0%
+</div>
+
+</div>
+
+<h2>🔥 Daily Challenge</h2>
+<p id="challenge"></p>
+
+</body>
+</html>

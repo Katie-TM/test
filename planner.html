@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Planner | StudyAI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="sidebar">
+    <div class="sidebar-top">
+        <h2>StudyPilot AI</h2>
+        <button id="themeBtn" onclick="toggleTheme()">
+            ☀️
+        </button>
+    </div>
+
+    <ul>
+        <li><a href="index.html">🏠 Dashboard</a></li>
+        <li><a href="planner.html">📅 Planner</a></li>
+        <li><a href="ai-planner.html">🤖 AI Planner</a></li>
+        <li><a href="progress.html">📊 Progress</a></li>
+        <li><a href="timer.html">⏱ Timer</a></li>
+    </ul>
+</div>
+
+<div class="container">
+    <h1>📅 Study Planner</h1>
+    <div class="form">
+
+        <input
+            type="text"
+            id="subject"
+            placeholder="Subject">
+
+        <input
+            type="date"
+            id="examDate">
+
+        <select id="difficulty">
+            <option>Easy</option>
+            <option>Medium</option>
+            <option>Hard</option>
+        </select>
+
+        <button onclick="addSubject()">
+            Add Subject
+        </button>
+
+    </div>
+
+    <input
+    type="text"
+    id="search"
+    placeholder="🔍 Search Subject..."
+    onkeyup="searchSubjects()">
+    <br>
+
+    <table>
+
+        <thead>
+        <tr>
+
+            <th>Subject</th>
+            <th>Exam Date</th>
+            <th>Difficulty</th>
+            <th>Delete</th>
+
+        </tr>
+        </thead>
+
+        <tbody id="tableBody">
+        </tbody>
+
+    </table>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

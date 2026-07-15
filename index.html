@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyAI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div class="sidebar">
+    <div class="sidebar-top">
+        <h2>StudyPilot AI</h2>
+        <button id="themeBtn" onclick="toggleTheme()">
+            ☀️
+        </button>
+    </div>
+
+    <ul>
+        <li><a href="index.html">🏠 Dashboard</a></li>
+        <li><a href="planner.html">📅 Planner</a></li>
+        <li><a href="ai-planner.html">🤖 AI Planner</a></li>
+        <li><a href="progress.html">📊 Progress</a></li>
+        <li><a href="timer.html">⏱ Timer</a></li>
+    </ul>
+</div>
+
+<div class="main">
+
+<header>
+<h1>Welcome Back!</h1>
+<p id="quote"></p>
+</header>
+
+<div class="cards">
+
+<div class="card">
+<h3>Today's Tasks</h3>
+<h2 id="tasks">0</h2>
+</div>
+
+<div class="card">
+<h3>Hours Planned</h3>
+<h2 id="hours">0</h2>
+</div>
+
+
+</div>
+
+<div class="progress-card">
+<h2>Weekly Progress</h2>
+<div class="progress">
+<div class="progress-bar" id="progressBar">
+0%
+</div>
+
+</div>
+
+</div>
+
+<button onclick="newQuote()">
+🔄 New Quote
+</button>
+
+<div class="dashboard-cards">
+
+    <div class="dashboard-card">
+        <h3>🔥 Study Streak</h3>
+        <h2 id="streakCount">0 Days</h2>
+        <p>Keep your consistency going!</p>
+    </div>
+
+
+    <div class="dashboard-card">
+        <h3>🏆 Badges</h3>
+        <h2 id="badgeCount">0 Earned</h2>
+        <p>Unlock achievements by studying</p>
+    </div>
+
+
+    <div class="dashboard-card">
+        <h3>📚 Upcoming Exams</h3>
+        <h2 id="examCount">0</h2>
+        <p>Exams planned</p>
+    </div>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

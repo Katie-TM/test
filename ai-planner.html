@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Study Planner</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+
+<body>
+
+    <div class="sidebar">
+    <div class="sidebar-top">
+        <h2>StudyPilot AI</h2>
+        <button id="themeBtn" onclick="toggleTheme()">
+            ☀️
+        </button>
+    </div>
+
+    <ul>
+        <li><a href="index.html">🏠 Dashboard</a></li>
+        <li><a href="planner.html">📅 Planner</a></li>
+        <li><a href="ai-planner.html">🤖 AI Planner</a></li>
+        <li><a href="progress.html">📊 Progress</a></li>
+        <li><a href="timer.html">⏱ Timer</a></li>
+    </ul>
+</div>
+
+<div class="container">
+<h1>🤖 AI Timetable Generator</h1>
+<br>
+<p>
+Our AI will analyse your subjects and create a balanced revision plan.
+</p>
+
+
+<button onclick="generatePlan()">
+Generate My Study Plan
+</button>
+
+<button onclick="downloadPDF()">
+📄 Download Timetable
+</button>
+
+<br>
+<h2>Your AI Schedule</h2>
+
+<table>
+
+<thead>
+<tr>
+<th>Day</th>
+<th>Subject</th>
+<th>Study Focus</th>
+</tr>
+
+</thead>
+
+
+<tbody id="aiTable"></tbody>
+
+</table>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

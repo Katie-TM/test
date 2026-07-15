@@ -1,0 +1,368 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+display:flex;
+background:#eef2ff;
+}
+
+.sidebar{
+width:230px;
+height:100vh;
+background:linear-gradient(180deg,#4f46e5,#6366f1);
+color:white;
+padding:30px;
+}
+
+.sidebar h2{
+margin-bottom:40px;
+}
+
+.sidebar ul{
+list-style:none;
+}
+
+.sidebar li{
+padding:15px 0;
+cursor:pointer;
+transition:.3s;
+}
+
+.sidebar li:hover{
+padding-left:10px;
+}
+
+.main{
+flex:1;
+padding:40px;
+}
+
+header h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.cards{
+display:flex;
+gap:20px;
+margin-top:30px;
+}
+
+.card{
+flex:1;
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.progress-card{
+margin-top:40px;
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+.progress{
+background:#ddd;
+height:30px;
+border-radius:20px;
+overflow:hidden;
+margin-top:20px;
+}
+
+.progress-bar{
+width:70%;
+height:100%;
+background:linear-gradient(90deg,#4f46e5,#22c55e);
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+font-weight:bold;
+}
+
+.container{
+width:90%;
+margin:auto;
+padding:40px;
+}
+
+.form{
+display:flex;
+gap:15px;
+margin:30px 0;
+flex-wrap:wrap;
+}
+
+.form input,
+.form select{
+padding:12px;
+border-radius:10px;
+border:1px solid #ccc;
+font-size:16px;
+}
+
+button{
+padding:12px 20px;
+background:#4f46e5;
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+background:#4338ca;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+background:white;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+border-radius:15px;
+overflow:hidden;
+}
+
+th{
+background:#4f46e5;
+color:white;
+padding:15px;
+}
+
+td{
+padding:15px;
+text-align:center;
+border-bottom:1px solid #eee;
+}
+
+/* Dark Theme */
+
+.dark{
+background:#1b1b1b;
+color:white;
+}
+
+.dark .card,
+.dark .container,
+.dark table{
+
+background:#2d2d2d;
+color:white;
+
+}
+
+.dark th{
+background:#4338ca;
+}
+
+.dark td{
+border-color:#555;
+}
+
+.dark input,
+.dark select{
+
+background:#333;
+color:white;
+border:1px solid #666;
+
+}
+
+.dark button{
+background:#6366f1;
+}
+
+.dark button:hover{
+background:#4f46e5;
+}
+
+#badges{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+.badge{
+padding:20px;
+background:white;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+font-size:18px;
+}
+
+.sidebar{
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+}
+
+.sidebar-top{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:40px;
+}
+
+.sidebar a{
+color:white;
+text-decoration:none;
+display:block;
+}
+
+#themeBtn{
+background:white;
+color:black;
+font-size:20px;
+border-radius:50%;
+width:45px;
+height:45px;
+cursor:pointer;
+transition:.3s;
+}
+
+#themeBtn:hover{
+transform:rotate(180deg);
+}
+
+*{
+scroll-behavior:smooth;
+}
+
+.card{
+animation:fadeIn .8s;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+table tr:hover{
+background:#f3f4ff;
+transition:.3s;
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark p,
+.dark label,
+.dark th,
+.dark td {
+    color: white;
+}
+
+.dark .progress {
+    background: #444;
+}
+
+.dark .progress-bar {
+    background: linear-gradient(90deg, #7c3aed, #22c55e);
+    color: white;
+}
+
+.dark .card,
+.dark .progress-card,
+.dark table {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.dark .progress-card {
+    background: #2d2d2d;
+    color: white;
+}
+
+.dark .progress-card h2 {
+    color: white;
+}
+
+.dark .progress {
+    background: #555;
+}
+
+.music-player {
+    margin-top:40px;
+    padding:20px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+.dark .music-player{
+    background:#2d2d2d;
+}
+
+.dashboard-cards {
+    display:flex;
+    gap:20px;
+    margin-top:40px;
+}
+
+.dashboard-card {
+    flex:1;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+
+.dashboard-card:hover{
+    transform:translateY(-5px);
+}
+
+
+.dashboard-card h2{
+    font-size:32px;
+    margin:15px 0;
+}
+
+
+.dashboard-card p{
+    color:#777;
+}
+
+
+.dark .dashboard-card{
+    background:#2d2d2d;
+    color:white;
+}
+
+
+.dark .dashboard-card p{
+    color:#ccc;
+}
+
+/* Dark mode support */
+
+.dark .dashboard-card {
+    background:#222;
+}
