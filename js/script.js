@@ -1,3 +1,4 @@
+// Array of inspirational quotes
 const quotes = [
 "Small progress is still progress.",
 "Stay focused. Stay determined.",
@@ -8,6 +9,7 @@ const quotes = [
 "Today's effort creates tomorrow's success."
 ];
 
+// Function to display a new random quote
 function newQuote(){
     const quote=document.getElementById("quote");
     if(!quote) return;
@@ -15,24 +17,28 @@ function newQuote(){
     quotes[Math.floor(Math.random()*quotes.length)];
 }
 
-newQuote();
+newQuote(); // Display a random quote on page load
 
-const quote = document.getElementById("quote");
+const quote = document.getElementById("quote"); // Get the quote element
 
+// If the quote element exists, set its text content to a random quote
 if (quote) {
     quote.textContent =
     quotes[Math.floor(Math.random()*quotes.length)];
 }
 
+// Set the progress value, this is dynamically set based on the user's progress in the application. For demonstration, it's hardcoded to 70%.
 let progress=70;
 
-const progressBar = document.getElementById("progressBar");
+const progressBar = document.getElementById("progressBar"); // Get the progress bar element
 
+// If the progress bar element exists, update its width and text content based on the progress value
 if (progressBar) {
     progressBar.style.width = progress + "%";
     progressBar.textContent = progress + "%";
 }
 
+// Set the number of tasks, hours, and exams. These values are dynamically set based on the user's data. For demonstration, they are hardcoded.
 const tasks = document.getElementById("tasks");
 if (tasks) tasks.textContent = 6;
 
@@ -90,13 +96,15 @@ function displaySubjects(){
         <td>${item.difficulty}</td>
 
         <td>
-        <button onclick="editSubject(${index})">
-        ✏️
-        </button>
+            <button onclick="editSubject(${index})">
+            ✏️
+            </button>
+        </td>
 
-        <button onclick="deleteSubject(${index})">
-        ❌
-        </button>
+        <td>
+            <button onclick="deleteSubject(${index})">
+            ❌
+            </button>
         </td>
 
         </tr>
